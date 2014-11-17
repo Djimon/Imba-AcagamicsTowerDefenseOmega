@@ -1,0 +1,6 @@
+rechts im GitHub ist ein button zum "Wiki"
+darüber kann man ganz gut ToDO-Listen erstellen
+oder anderweitige Kommentare schrieben, oder wünsche udn verbesserungsvorschläge.
+
+allgemein ganz gut für Kommunikation
+schaut ma rein, ich hab jetzt erstmal ein Platzhalter angelegt
