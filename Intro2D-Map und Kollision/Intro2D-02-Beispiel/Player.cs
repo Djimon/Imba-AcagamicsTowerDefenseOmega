@@ -33,13 +33,13 @@ namespace Intro2D_02_Beispiel
 
             public Player()
             {
-                Texture playerTexture = new Texture("Pictures/player.png");
+                Texture playerTexture = new Texture("tdtextures/Player_model.png");
                 playerSprite = new Sprite(playerTexture);
 
                 playerPosition = new Vector2f(51, 51);
                 playerSprite.Position = playerPosition;
 
-                playerSprite.Scale = new Vector2f(0.03125f, 0.03125f);
+                playerSprite.Scale = new Vector2f(1f, 1f);
             }
 
             public void move(Map map)

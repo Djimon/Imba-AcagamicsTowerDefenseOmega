@@ -38,7 +38,7 @@ namespace Intro2D_02_Beispiel
 				 {0,3,2,3,0,0,0,0,0,0,0,0},
 				 {0,3,2,3,3,3,3,1,1,1,1,1},
 				 {0,3,2,2,2,2,2,2,2,2,2,1},
-				 {0,3,3,3,3,3,3,1,1,1,2,1}};
+				 {0,3,3,3,3,3,3,1,1,1,2,1}};  
             mapTiles = new Tile[mapInt.GetLength(0), mapInt.GetLength(1)];
             for (int i = 0; i < mapInt.GetLength(0); i++)
             {

@@ -47,8 +47,8 @@ namespace Intro2D_02_Beispiel
         static void initialize()
         {
             player = new Player();
-            tobi = new Enemy(new Vector2f(400f, 300f), "Pictures/Enemy.png");
-            tobi2 = new Enemy(new Vector2f(100f, 200f), "Pictures/EnemyGreen.png");
+            tobi = new Enemy(new Vector2f(350f, 400f), "tdtextures/wurm_hor_2.png");   //Spawnposition
+            tobi2 = new Enemy(new Vector2f(200f, 250f), "tdtextures/wurm_vert_2.png");
             map = new Map();
 
         }
