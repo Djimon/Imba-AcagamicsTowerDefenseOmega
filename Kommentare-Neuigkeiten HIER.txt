@@ -4,3 +4,7 @@ oder anderweitige Kommentare schrieben, oder wünsche udn verbesserungsvorschläge
 
 allgemein ganz gut für Kommunikation
 schaut ma rein, ich hab jetzt erstmal ein Platzhalter angelegt
+------------------------
+
+Bugs:
+- wenn spieler links oder rechts vom bildschirm rand -> absturz, behebt sich aber wrsl von seblst, wenn wir das "springen" der einzelnen kachen einführen
