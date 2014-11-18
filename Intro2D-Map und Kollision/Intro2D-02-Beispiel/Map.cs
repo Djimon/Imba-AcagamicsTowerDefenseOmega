@@ -50,7 +50,7 @@ namespace Intro2D_02_Beispiel
                     }
                     else if (mapInt[i, j] == 1)
                     {
-                        mapTiles[i, j] = new Tile(false, "Pictures/tile1.png", new Vector2f((float)(50 * i), (float)(50 * j)));
+                        mapTiles[i, j] = new Tile(false, "tdtextures/texture4.png", new Vector2f((float)(50 * i), (float)(50 * j)));
                     }
                     else if (mapInt[i, j] == 2)
                     {

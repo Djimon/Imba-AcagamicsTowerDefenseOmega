@@ -100,6 +100,18 @@
     <Content Include="tdtextures\texture3.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="tdtextures\texture4.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tdtextures\tower1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tdtextures\tower2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tdtextures\tower3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="tdtextures\wurm_hor_1.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
