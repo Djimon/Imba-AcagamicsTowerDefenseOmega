@@ -1,10 +1,7 @@
-rechts im GitHub ist ein button zum "Wiki"
-darüber kann man ganz gut ToDO-Listen erstellen
-oder anderweitige Kommentare schrieben, oder wünsche udn verbesserungsvorschläge.
-
-allgemein ganz gut für Kommunikation
-schaut ma rein, ich hab jetzt erstmal ein Platzhalter angelegt
-------------------------
+Kommunikation:
+--------------
 
 Bugs:
 - wenn spieler links oder rechts vom bildschirm rand -> absturz, behebt sich aber wrsl von seblst, wenn wir das "springen" der einzelnen kachen einführen
+
+-> den flowerpowertower find ich ne coole idee mit der sich drehenden Blüte, kriegste da vlt noch ein Stengelchen drunter?
