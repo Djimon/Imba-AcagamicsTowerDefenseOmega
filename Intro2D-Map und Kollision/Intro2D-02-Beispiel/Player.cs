@@ -12,6 +12,7 @@ namespace Intro2D_02_Beispiel
         {
             Vector2f playerPosition;
             Sprite playerSprite;
+            bool IsPressed;
 
             public Vector2f getPosition()
             {
@@ -36,7 +37,7 @@ namespace Intro2D_02_Beispiel
                 Texture playerTexture = new Texture("tdtextures/Player_model.png");
                 playerSprite = new Sprite(playerTexture);
 
-                playerPosition = new Vector2f(51, 51);
+                playerPosition = new Vector2f(300, 100);
                 playerSprite.Position = playerPosition;
 
                 playerSprite.Scale = new Vector2f(1f, 1f);
@@ -44,22 +45,21 @@ namespace Intro2D_02_Beispiel
 
             public void move(Map map)
             {
-                float runningSpeed = 1;
-
-                bool Left = map.isWalckable((int)(this.getPosition().X - runningSpeed) / 50, (int)(this.getPosition().Y) / 50) && map.isWalckable((int)(this.getPosition().X - runningSpeed) / 50, (int)(this.getPosition().Y + this.getHeight()) / 50);
-                bool Right = map.isWalckable((int)(this.getPosition().X + this.getWidth() + runningSpeed) / 50, (int)(this.getPosition().Y) / 50) && map.isWalckable((int)(this.getPosition().X + this.getWidth() + runningSpeed) / 50, (int)(this.getPosition().Y + this.getHeight()) / 50);
-                bool Up = map.isWalckable((int)(this.getPosition().X) / 50, (int)(this.getPosition().Y - runningSpeed) / 50) && map.isWalckable((int)(this.getPosition().X + this.getWidth()) / 50, (int)(this.getPosition().Y - runningSpeed) / 50);
-                bool Down = map.isWalckable((int)(this.getPosition().X) / 50, (int)(this.getPosition().Y + this.getHeight() + runningSpeed) / 50) && map.isWalckable((int)(this.getPosition().X + this.getWidth()) / 50, (int)(this.getPosition().Y + this.getHeight() + runningSpeed) / 50);
 
 
-                if (Keyboard.IsKeyPressed(Keyboard.Key.A) && Left)
-                    playerPosition = new Vector2f(playerPosition.X - 0.1f, playerPosition.Y);
-                if (Keyboard.IsKeyPressed(Keyboard.Key.D) && Right)
-                    playerPosition = new Vector2f(playerPosition.X + 0.1f, playerPosition.Y);
-                if (Keyboard.IsKeyPressed(Keyboard.Key.W) && Up)
-                    playerPosition = new Vector2f(playerPosition.X, playerPosition.Y - 0.1f);
-                if (Keyboard.IsKeyPressed(Keyboard.Key.S) && Down)
-                    playerPosition = new Vector2f(playerPosition.X, playerPosition.Y + 0.1f);
+                if (Keyboard.IsKeyPressed(Keyboard.Key.A) && !(playerPosition.X < 0)) { 
+
+                    playerPosition = new Vector2f(playerPosition.X - 50f, playerPosition.Y);
+                }
+                if (Keyboard.IsKeyPressed(Keyboard.Key.D) && !(playerPosition.X > 750)){
+                    playerPosition = new Vector2f(playerPosition.X + 50f, playerPosition.Y);
+                }
+                if (Keyboard.IsKeyPressed(Keyboard.Key.W) && !(playerPosition.Y < 0)){
+                    playerPosition = new Vector2f(playerPosition.X, playerPosition.Y - 50f);
+                }
+                if (Keyboard.IsKeyPressed(Keyboard.Key.S) && !(playerPosition.Y < 0)){
+                playerPosition = new Vector2f(playerPosition.X, playerPosition.Y + 50f);
+                }
 
                 playerSprite.Position = playerPosition;
             }

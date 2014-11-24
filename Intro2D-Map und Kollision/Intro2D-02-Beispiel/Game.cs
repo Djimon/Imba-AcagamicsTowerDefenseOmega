@@ -13,7 +13,7 @@ namespace Intro2D_02_Beispiel
         public static void Main()
         {
             // Erzeuge ein neues Fenster
-            RenderWindow win = new RenderWindow(new VideoMode(800, 600), "Mein erstes Fenster");
+            RenderWindow win = new RenderWindow(new VideoMode(800, 600), "Flowertower");
 
 
             // Achte darauf, ob Fenster geschlossen wird
@@ -47,8 +47,8 @@ namespace Intro2D_02_Beispiel
         static void initialize()
         {
             player = new Player();
-            tobi = new Enemy(new Vector2f(350f, 400f), "tdtextures/wurm_hor_2.png");   //Spawnposition
-            tobi2 = new Enemy(new Vector2f(200f, 250f), "tdtextures/wurm_vert_2.png");
+            tobi = new Enemy(new Vector2f(0f, 300f), "tdtextures/wurm_hor_2.png");   //Spawnposition
+            tobi2 = new Enemy(new Vector2f(0f, 300f), "tdtextures/wurm_vert_2.png");
             map = new Map();
 
         }
