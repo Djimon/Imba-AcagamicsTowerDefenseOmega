@@ -45,8 +45,9 @@
     <Compile Include="GameStates.cs" />
     <Compile Include="GameTime.cs" />
     <Compile Include="GameWon.cs" />
+    <Compile Include="GlobalHitter.cs" />
     <Compile Include="MainMenu.cs" />
-    <Compile Include="Map.cs" />
+    <Compile Include="Map_test.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="Tile.cs" />
   </ItemGroup>

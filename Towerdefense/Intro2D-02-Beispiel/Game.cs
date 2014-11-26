@@ -42,13 +42,14 @@ namespace Intro2D_02_Beispiel
         static Player player;
         static Enemy tobi, tobi2;
         static Map map;
+        static GlobalHitter hitter;
 
 
         static void initialize()
         {
             player = new Player();
-            tobi = new Enemy(new Vector2f(0f, 300f), "tdtextures/wurm_hor_2.png");   //Spawnposition
-            tobi2 = new Enemy(new Vector2f(0f, 300f), "tdtextures/wurm_vert_2.png");
+            tobi = new Enemy(new Vector2f(0f, 265f), "tdtextures/wurm_hor_2.png");   //Spawnposition
+            tobi2 = new Enemy(new Vector2f(0f, 305f), "tdtextures/wurm_vert_2.png");
             map = new Map();
 
         }
@@ -61,12 +62,16 @@ namespace Intro2D_02_Beispiel
         static void update()
         {
             player.move(map);
-            //tobi.move(player.getPosition());
-            //tobi2.move2();
-
+            tobi.move(player.getPosition());
+           // tobi.move(hitter.getPosition()); klappt erst wenn der globalhitter gefixt ist
+            tobi2.move2();
+            
             if (collision(player.getPosition(), player.getHeight(), player.getWidth(), tobi.getPosition(), tobi.getHeight(), tobi.getWidth()))
                 Console.WriteLine("collision!!111");
 
+          /*  if (collision(tobi.getPosition(), tobi.getHeight(), tobi.getWidth(), hitter.getPosition(), hitter.getHeight(), hitter.getWidth()))
+                Console.WriteLine("Punkt Abzug");  //wenn gegner "tobi" ziel erreicht
+           */
 
         }
 
@@ -78,7 +83,9 @@ namespace Intro2D_02_Beispiel
             player.draw(win);
             tobi.draw(win);
             tobi2.draw(win);
+            // hitter.draw(win);        //klappt noch nciht?
             win.Display();
+           
         }
 
         static bool collision(Vector2f obj1, float hObj1, float wObj1, Vector2f obj2, float hObj2, float wObj2)

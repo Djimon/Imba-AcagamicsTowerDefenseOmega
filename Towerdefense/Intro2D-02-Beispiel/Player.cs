@@ -37,7 +37,7 @@ namespace Intro2D_02_Beispiel
                 Texture playerTexture = new Texture("tdtextures/Player_model.png");
                 playerSprite = new Sprite(playerTexture);
 
-                playerPosition = new Vector2f(300, 100);
+                playerPosition = new Vector2f(700, 250);
                 playerSprite.Position = playerPosition;
 
                 playerSprite.Scale = new Vector2f(1f, 1f);
@@ -46,10 +46,11 @@ namespace Intro2D_02_Beispiel
             public void move(Map map)
             {
 
-
+                //springr 50 pixel (1sprite)
+                // fehlt if isPressed -abfrage, sonst rast er unendlicc uas dem bild
                 if (Keyboard.IsKeyPressed(Keyboard.Key.A) && !(playerPosition.X < 0)) { 
 
-                    playerPosition = new Vector2f(playerPosition.X - 50f, playerPosition.Y);
+                    playerPosition = new Vector2f(playerPosition.X - 50f, playerPosition.Y); 
                 }
                 if (Keyboard.IsKeyPressed(Keyboard.Key.D) && !(playerPosition.X > 750)){
                     playerPosition = new Vector2f(playerPosition.X + 50f, playerPosition.Y);
@@ -62,6 +63,8 @@ namespace Intro2D_02_Beispiel
                 }
 
                 playerSprite.Position = playerPosition;
+
+
             }
 
             public void draw(RenderWindow win)

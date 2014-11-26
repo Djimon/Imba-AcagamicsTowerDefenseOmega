@@ -20,7 +20,7 @@ namespace Intro2D_02_Beispiel
 
         public float getHeight()
         {
-            return sprite.Texture.Size.X;
+            return sprite.Texture.Size.X; 
         }
 
         public float getWidth()
@@ -35,6 +35,8 @@ namespace Intro2D_02_Beispiel
 
             Texture tex = new Texture(texturePath);
             sprite = new Sprite(tex);
+            sprite.Scale = new Vector2f(0.8f, 0.8f); //skallierung angepast, damit sie besser durchs gelände laufen können
+
         }
 
         public void draw(RenderWindow win)
@@ -45,11 +47,11 @@ namespace Intro2D_02_Beispiel
 
         public void move(Vector2f playerposition)
         {
-            /*position.X += 0.1f;
+            position.X += 0.1f;
             if(position.X > 800)
             {
                 position.X = position.X % 800;
-            }*/
+            }
 
             Vector2f direction = playerposition - position;
             float length = (float)Math.Sqrt(direction.X * direction.X + direction.Y * direction.Y);
