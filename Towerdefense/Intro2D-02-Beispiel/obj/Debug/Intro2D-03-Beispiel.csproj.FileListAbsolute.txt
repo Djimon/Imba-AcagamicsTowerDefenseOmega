@@ -68,3 +68,38 @@ C:\Users\Christoph Dollase\Acagamics\Imba-AcagamicsTowerDefenseOmega-master\Imba
 C:\Users\Christoph Dollase\Acagamics\Imba-AcagamicsTowerDefenseOmega-master\Imba-AcagamicsTowerDefenseOmega\Towerdefense\Intro2D-02-Beispiel\bin\Debug\Intro2D-02-Beispiel.exe
 C:\Users\Christoph Dollase\Acagamics\Imba-AcagamicsTowerDefenseOmega-master\Imba-AcagamicsTowerDefenseOmega\Towerdefense\Intro2D-02-Beispiel\bin\Debug\Intro2D-02-Beispiel.pdb
 C:\Users\Christoph Dollase\Acagamics\Imba-AcagamicsTowerDefenseOmega-master\Imba-AcagamicsTowerDefenseOmega\Towerdefense\Intro2D-02-Beispiel\obj\Debug\Intro2D-03-Beispiel.csprojResolveAssemblyReference.cache
+C:\Users\Kilian\Desktop\Imba-AcagamicsTowerDefenseOmega\Towerdefense\Intro2D-02-Beispiel\bin\Debug\Intro2D-02-Beispiel.exe.config
+C:\Users\Kilian\Desktop\Imba-AcagamicsTowerDefenseOmega\Towerdefense\Intro2D-02-Beispiel\obj\Debug\Intro2D-02-Beispiel.exe
+C:\Users\Kilian\Desktop\Imba-AcagamicsTowerDefenseOmega\Towerdefense\Intro2D-02-Beispiel\obj\Debug\Intro2D-02-Beispiel.pdb
+C:\Users\Kilian\Desktop\Imba-AcagamicsTowerDefenseOmega\Towerdefense\Intro2D-02-Beispiel\bin\Debug\Pictures\Enemy.png
+C:\Users\Kilian\Desktop\Imba-AcagamicsTowerDefenseOmega\Towerdefense\Intro2D-02-Beispiel\bin\Debug\Pictures\EnemyGreen.png
+C:\Users\Kilian\Desktop\Imba-AcagamicsTowerDefenseOmega\Towerdefense\Intro2D-02-Beispiel\bin\Debug\Pictures\tile1.png
+C:\Users\Kilian\Desktop\Imba-AcagamicsTowerDefenseOmega\Towerdefense\Intro2D-02-Beispiel\bin\Debug\Pictures\tile2.png
+C:\Users\Kilian\Desktop\Imba-AcagamicsTowerDefenseOmega\Towerdefense\Intro2D-02-Beispiel\bin\Debug\libsndfile-1.dll
+C:\Users\Kilian\Desktop\Imba-AcagamicsTowerDefenseOmega\Towerdefense\Intro2D-02-Beispiel\bin\Debug\openal32.dll
+C:\Users\Kilian\Desktop\Imba-AcagamicsTowerDefenseOmega\Towerdefense\Intro2D-02-Beispiel\bin\Debug\tdtextures\MainMenu\credit.png
+C:\Users\Kilian\Desktop\Imba-AcagamicsTowerDefenseOmega\Towerdefense\Intro2D-02-Beispiel\bin\Debug\tdtextures\MainMenu\credit2.png
+C:\Users\Kilian\Desktop\Imba-AcagamicsTowerDefenseOmega\Towerdefense\Intro2D-02-Beispiel\bin\Debug\tdtextures\MainMenu\quit.png
+C:\Users\Kilian\Desktop\Imba-AcagamicsTowerDefenseOmega\Towerdefense\Intro2D-02-Beispiel\bin\Debug\tdtextures\MainMenu\quit2.png
+C:\Users\Kilian\Desktop\Imba-AcagamicsTowerDefenseOmega\Towerdefense\Intro2D-02-Beispiel\bin\Debug\tdtextures\MainMenu\start.png
+C:\Users\Kilian\Desktop\Imba-AcagamicsTowerDefenseOmega\Towerdefense\Intro2D-02-Beispiel\bin\Debug\tdtextures\MainMenu\start2.png
+C:\Users\Kilian\Desktop\Imba-AcagamicsTowerDefenseOmega\Towerdefense\Intro2D-02-Beispiel\bin\Debug\tdtextures\MainMenu\titelbildschirm.png
+C:\Users\Kilian\Desktop\Imba-AcagamicsTowerDefenseOmega\Towerdefense\Intro2D-02-Beispiel\bin\Debug\csfml-audio-2.dll
+C:\Users\Kilian\Desktop\Imba-AcagamicsTowerDefenseOmega\Towerdefense\Intro2D-02-Beispiel\bin\Debug\csfml-graphics-2.dll
+C:\Users\Kilian\Desktop\Imba-AcagamicsTowerDefenseOmega\Towerdefense\Intro2D-02-Beispiel\bin\Debug\csfml-window-2.dll
+C:\Users\Kilian\Desktop\Imba-AcagamicsTowerDefenseOmega\Towerdefense\Intro2D-02-Beispiel\bin\Debug\Pictures\player.png
+C:\Users\Kilian\Desktop\Imba-AcagamicsTowerDefenseOmega\Towerdefense\Intro2D-02-Beispiel\bin\Debug\tdtextures\Player_model.png
+C:\Users\Kilian\Desktop\Imba-AcagamicsTowerDefenseOmega\Towerdefense\Intro2D-02-Beispiel\bin\Debug\tdtextures\texture1.png
+C:\Users\Kilian\Desktop\Imba-AcagamicsTowerDefenseOmega\Towerdefense\Intro2D-02-Beispiel\bin\Debug\tdtextures\texture2.png
+C:\Users\Kilian\Desktop\Imba-AcagamicsTowerDefenseOmega\Towerdefense\Intro2D-02-Beispiel\bin\Debug\tdtextures\texture3.png
+C:\Users\Kilian\Desktop\Imba-AcagamicsTowerDefenseOmega\Towerdefense\Intro2D-02-Beispiel\bin\Debug\tdtextures\texture4.png
+C:\Users\Kilian\Desktop\Imba-AcagamicsTowerDefenseOmega\Towerdefense\Intro2D-02-Beispiel\bin\Debug\tdtextures\tower1.png
+C:\Users\Kilian\Desktop\Imba-AcagamicsTowerDefenseOmega\Towerdefense\Intro2D-02-Beispiel\bin\Debug\tdtextures\tower2.png
+C:\Users\Kilian\Desktop\Imba-AcagamicsTowerDefenseOmega\Towerdefense\Intro2D-02-Beispiel\bin\Debug\tdtextures\tower3.png
+C:\Users\Kilian\Desktop\Imba-AcagamicsTowerDefenseOmega\Towerdefense\Intro2D-02-Beispiel\bin\Debug\tdtextures\wurm_hor_1.png
+C:\Users\Kilian\Desktop\Imba-AcagamicsTowerDefenseOmega\Towerdefense\Intro2D-02-Beispiel\bin\Debug\tdtextures\wurm_hor_2.png
+C:\Users\Kilian\Desktop\Imba-AcagamicsTowerDefenseOmega\Towerdefense\Intro2D-02-Beispiel\bin\Debug\tdtextures\wurm_vert_1.png
+C:\Users\Kilian\Desktop\Imba-AcagamicsTowerDefenseOmega\Towerdefense\Intro2D-02-Beispiel\bin\Debug\tdtextures\wurm_vert_2.png
+C:\Users\Kilian\Desktop\Imba-AcagamicsTowerDefenseOmega\Towerdefense\Intro2D-02-Beispiel\bin\Debug\Intro2D-02-Beispiel.exe
+C:\Users\Kilian\Desktop\Imba-AcagamicsTowerDefenseOmega\Towerdefense\Intro2D-02-Beispiel\bin\Debug\Intro2D-02-Beispiel.pdb
+C:\Users\Kilian\Desktop\Imba-AcagamicsTowerDefenseOmega\Towerdefense\Intro2D-02-Beispiel\obj\Debug\Intro2D-03-Beispiel.csprojResolveAssemblyReference.cache

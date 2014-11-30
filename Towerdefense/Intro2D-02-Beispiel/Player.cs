@@ -48,18 +48,35 @@ namespace Intro2D_02_Beispiel
 
                 //springr 50 pixel (1sprite)
                 // fehlt if isPressed -abfrage, sonst rast er unendlicc uas dem bild
-                if (Keyboard.IsKeyPressed(Keyboard.Key.A) && !(playerPosition.X < 0)) { 
-
-                    playerPosition = new Vector2f(playerPosition.X - 50f, playerPosition.Y); 
+                //bleibt am Rand stehen, bleibt also im Bild, move-delay fehlt noch
+                if (Keyboard.IsKeyPressed(Keyboard.Key.A) && !(playerPosition.X < 50)) { 
+                    if (IsPressed){
+                    }
+                    else {
+                        playerPosition = new Vector2f(playerPosition.X - 50f, playerPosition.Y); 
+                    }
                 }
-                if (Keyboard.IsKeyPressed(Keyboard.Key.D) && !(playerPosition.X > 750)){
-                    playerPosition = new Vector2f(playerPosition.X + 50f, playerPosition.Y);
+                if (Keyboard.IsKeyPressed(Keyboard.Key.D) && !(playerPosition.X > 749)){
+                    if (IsPressed){
+                    }
+                    else {
+                        playerPosition = new Vector2f(playerPosition.X + 50f, playerPosition.Y);
+                    }
                 }
-                if (Keyboard.IsKeyPressed(Keyboard.Key.W) && !(playerPosition.Y < 0)){
-                    playerPosition = new Vector2f(playerPosition.X, playerPosition.Y - 50f);
+                if (Keyboard.IsKeyPressed(Keyboard.Key.W) && !(playerPosition.Y < 50)){
+                    if (IsPressed){
+                        }
+                    else {playerPosition = new Vector2f(playerPosition.X, playerPosition.Y - 50f);
+                    }
                 }
-                if (Keyboard.IsKeyPressed(Keyboard.Key.S) && !(playerPosition.Y < 0)){
-                playerPosition = new Vector2f(playerPosition.X, playerPosition.Y + 50f);
+                if (Keyboard.IsKeyPressed(Keyboard.Key.S) && !(playerPosition.Y > 549)){
+                    if (IsPressed)
+                    {
+                    }
+                    else
+                    {
+                        playerPosition = new Vector2f(playerPosition.X, playerPosition.Y + 50f);
+                    }
                 }
 
                 playerSprite.Position = playerPosition;
