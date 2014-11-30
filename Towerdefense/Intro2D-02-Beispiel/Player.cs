@@ -29,8 +29,18 @@ namespace Intro2D_02_Beispiel
                 return playerSprite.Texture.Size.X * playerSprite.Scale.X;
             }
 
-            
 
+            public void placeTower()
+            {
+
+                //&& kein Tower an dieser Position muss noch in die Bedingung
+                if (map[this.playerPosition.X / 50][this.playerPosition.Y / 50] == 3 && Keyboard.IsKeyPressed(Keyboard.Key.Num1))
+                {
+                    Tower Shoottower = new Tower(new Vector2f(this.playerPosition.X, this.playerPosition.Y));
+                }
+
+
+            }
 
             public Player()
             {
