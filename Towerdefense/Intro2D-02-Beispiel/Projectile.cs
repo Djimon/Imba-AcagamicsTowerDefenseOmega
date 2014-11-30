@@ -29,16 +29,34 @@ namespace Intro2D_02_Beispiel
         }
 
 
-        public Projectile(Vector2f _position, string texturePath)
+        public Projectile(Vector2f _position)
         {
             projectilePos = _position;
-
-            Texture tex = new Texture(texturePath);
+            Texture tex = new Texture("tdtextures/projektile.png");
             pewpew = new Sprite(tex);
+           // pewpew.Position = projectilePos;
           
 
         }
 
+        public void shoot(Vector2f enemypos)       {
+    
+            Vector2f direction = enemypos - projectilePos;
+            float length = (float)Math.Sqrt(direction.X * direction.X + direction.Y * direction.Y);
+            if (projectilePos.X - enemypos.X <= 200) 
+            {
+                
+            projectilePos += direction/(length* 5);
+            }
+
+        }
+
+        public void draw(RenderWindow win)
+        {
+           pewpew.Position = projectilePos;
+           win.Draw(pewpew);
+
+        }
 
     }
 }

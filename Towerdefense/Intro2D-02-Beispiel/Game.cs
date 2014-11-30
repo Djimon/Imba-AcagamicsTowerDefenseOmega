@@ -43,7 +43,7 @@ namespace Intro2D_02_Beispiel
         static Enemy tobi, tobi2;
         static Map map;
         static GlobalHitter hitter;
-
+        static Projectile corn;
 
         static void initialize()
         {
@@ -51,7 +51,8 @@ namespace Intro2D_02_Beispiel
             tobi = new Enemy(new Vector2f(0f, 265f), "tdtextures/wurm_hor_2.png");   //Spawnposition
             tobi2 = new Enemy(new Vector2f(0f, 305f), "tdtextures/wurm_vert_2.png");
             map = new Map();
-
+            corn = new Projectile(new Vector2f(600,250));
+            
         }
 
         static void loadContent()
@@ -65,28 +66,30 @@ namespace Intro2D_02_Beispiel
             tobi.move(player.getPosition());
            // tobi.move(hitter.getPosition()); klappt erst wenn der globalhitter gefixt ist
             tobi2.move(player.getPosition());
+          // corn.shoot(tobi.getPosition());
             
             if (collision(player.getPosition(), player.getHeight(), player.getWidth(), tobi.getPosition(), tobi.getHeight(), tobi.getWidth()))
                 Console.WriteLine("collision!!111");
 
-            
 
+        
           /*  if (collision(tobi.getPosition(), tobi.getHeight(), tobi.getWidth(), hitter.getPosition(), hitter.getHeight(), hitter.getWidth()))
                 Console.WriteLine("Punkt Abzug");  //wenn gegner "tobi" ziel erreicht
            */
 
-        //     public void placeTower()
-        //    {
+            // public void placeTower()
+            //{
           
-        //          //&& kein Tower an dieser Position muss noch in die Bedingung
-        //    if (map[player.getPosition.X/50, player.getPosition.Y/50]==3 && Keyboard.IsKeyPressed(Keyboard.Key.Num1)) {
-        //          Tower Shoottower = new Tower(new Vector2f(player.getPosition.X, player.getPosition.Y));
-        //    }
+            //      //&& kein Tower an dieser Position muss noch in die Bedingung
+            //if (map[player.getPosition.X/50, player.getPosition.Y/50]==3 && Keyboard.IsKeyPressed(Keyboard.Key.Num1)) {
+            //      Tower Shoottower = new Tower(new Vector2f(player.getPosition.X, player.getPosition.Y));
+            //       // hier die Textur auf gras ändern? geht das also map[x,y]=2, damit sparen wir uns die abfrage ob tower schon steht
+            //}
 
 
-        //    }
+        
 
-        }
+    }
 
         static void draw(RenderWindow win)
         {

@@ -121,6 +121,9 @@
     <Content Include="tdtextures\Player_model.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="tdtextures\projektile.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="tdtextures\texture1.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
