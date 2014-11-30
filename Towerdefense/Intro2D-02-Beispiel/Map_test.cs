@@ -64,6 +64,8 @@ namespace Intro2D_02_Beispiel
             }
         }
 
+       
+
         public void draw(RenderWindow win)
         {
             for (int i = 0; i < mapInt.GetLength(0); i++)

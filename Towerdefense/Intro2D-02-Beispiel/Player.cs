@@ -29,7 +29,7 @@ namespace Intro2D_02_Beispiel
                 return playerSprite.Texture.Size.X * playerSprite.Scale.X;
             }
 
-
+            
 
 
             public Player()

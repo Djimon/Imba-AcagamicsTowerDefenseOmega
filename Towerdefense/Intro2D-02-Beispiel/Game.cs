@@ -69,9 +69,22 @@ namespace Intro2D_02_Beispiel
             if (collision(player.getPosition(), player.getHeight(), player.getWidth(), tobi.getPosition(), tobi.getHeight(), tobi.getWidth()))
                 Console.WriteLine("collision!!111");
 
+            
+
           /*  if (collision(tobi.getPosition(), tobi.getHeight(), tobi.getWidth(), hitter.getPosition(), hitter.getHeight(), hitter.getWidth()))
                 Console.WriteLine("Punkt Abzug");  //wenn gegner "tobi" ziel erreicht
            */
+
+        //     public void placeTower()
+        //    {
+          
+        //          //&& kein Tower an dieser Position muss noch in die Bedingung
+        //    if (map[player.getPosition.X/50, player.getPosition.Y/50]==3 && Keyboard.IsKeyPressed(Keyboard.Key.Num1)) {
+        //          Tower Shoottower = new Tower(new Vector2f(player.getPosition.X, player.getPosition.Y));
+        //    }
+
+
+        //    }
 
         }
 
