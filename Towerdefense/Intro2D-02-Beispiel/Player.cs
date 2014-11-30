@@ -29,8 +29,20 @@ namespace Intro2D_02_Beispiel
                 return playerSprite.Texture.Size.X * playerSprite.Scale.X;
             }
 
-            
 
+            public void placeTower(int[,] map)  // eine map bei Aufruf der methode übergeben?
+            {
+                int getx = (int)this.playerPosition.X / 50;
+                int gety = (int)this.playerPosition.Y / 50;
+                //&& kein Tower an dieser Position muss noch in die Bedingung
+                if (map[getx,gety] == 3 && Keyboard.IsKeyPressed(Keyboard.Key.Num1))
+                {
+                    Tower Shoottower = new Tower(new Vector2f(this.playerPosition.X, this.playerPosition.Y));
+                    // hier die Textur auf gras ändern? geht das? also map[x,y]=2, damit sparen wir uns die abfrage ob tower schon steht
+                }
+
+
+            }
 
             public Player()
             {

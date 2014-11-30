@@ -43,9 +43,8 @@ namespace Intro2D_02_Beispiel
     
             Vector2f direction = enemypos - projectilePos;
             float length = (float)Math.Sqrt(direction.X * direction.X + direction.Y * direction.Y);
-            if (projectilePos.X - enemypos.X <= 200) 
-            {
-                
+            if (projectilePos.X - enemypos.X <= 200)   //wenn gegner nah genug dran, dann schießen.
+            {                
             projectilePos += direction/(length* 5);
             }
 

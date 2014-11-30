@@ -66,7 +66,11 @@ namespace Intro2D_02_Beispiel
             tobi.move(player.getPosition());
            // tobi.move(hitter.getPosition()); klappt erst wenn der globalhitter gefixt ist
             tobi2.move(player.getPosition());
-          // corn.shoot(tobi.getPosition());
+
+            corn.shoot(tobi.getPosition());
+
+            player.placeTower(mapInt); // den intAray aus der Map gettern? 
+
             
             if (collision(player.getPosition(), player.getHeight(), player.getWidth(), tobi.getPosition(), tobi.getHeight(), tobi.getWidth()))
                 Console.WriteLine("collision!!111");
@@ -76,20 +80,9 @@ namespace Intro2D_02_Beispiel
           /*  if (collision(tobi.getPosition(), tobi.getHeight(), tobi.getWidth(), hitter.getPosition(), hitter.getHeight(), hitter.getWidth()))
                 Console.WriteLine("Punkt Abzug");  //wenn gegner "tobi" ziel erreicht
            */
+     
 
-            // public void placeTower()
-            //{
-          
-            //      //&& kein Tower an dieser Position muss noch in die Bedingung
-            //if (map[player.getPosition.X/50, player.getPosition.Y/50]==3 && Keyboard.IsKeyPressed(Keyboard.Key.Num1)) {
-            //      Tower Shoottower = new Tower(new Vector2f(player.getPosition.X, player.getPosition.Y));
-            //       // hier die Textur auf gras ändern? geht das also map[x,y]=2, damit sparen wir uns die abfrage ob tower schon steht
-            //}
-
-
-        
-
-    }
+        }
 
         static void draw(RenderWindow win)
         {
@@ -97,6 +90,7 @@ namespace Intro2D_02_Beispiel
             win.Clear(new Color(0, 0, 255));
             map.draw(win);
             player.draw(win);
+            corn.draw(win);
             tobi.draw(win);
             tobi2.draw(win);
             // hitter.draw(win);        //klappt noch nciht?
