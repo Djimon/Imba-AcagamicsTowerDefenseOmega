@@ -53,10 +53,13 @@ namespace Intro2D_02_Beispiel
             win.Draw(sprite);
         }
 
-        //KI - move test
-        public void move3(Vector2f plaxerPosition)
+        //KI - move test //aufruf in Game.cs (siehe: update()>> tobi.move3(..)
+        public void move3(Vector2f plaxerPosition, bool walkable)
         {
-            if (Map.isWalckable(getX(),getY()) { }
+            if (walkable)
+            { 
+
+            }
 
 
         }

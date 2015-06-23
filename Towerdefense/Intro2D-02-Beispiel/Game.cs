@@ -64,7 +64,11 @@ namespace Intro2D_02_Beispiel
         static void update()
         {
             player.move(map);
-            tobi.move3(player.getPosition());
+
+            //Enemy-Movement:
+            tobi.move3(player.getPosition(),map.isWalckable(tobi.getX(),tobi.getY()));
+
+
            // tobi.move(hitter.getPosition()); klappt erst wenn der globalhitter gefixt ist
        //     tobi2.move(player.getPosition());
 
