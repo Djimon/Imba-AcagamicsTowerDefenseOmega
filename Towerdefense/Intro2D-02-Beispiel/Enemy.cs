@@ -69,7 +69,8 @@ namespace Intro2D_02_Beispiel
             int y = 0;
 
             if (walkableRight) { x = 1; y = 0;}  //das geht
-            if (walkableTop) { x = 0; y = -1;} //scheint zu klapen
+            //if (walkableTop) { x = 0; y = -1;} //scheint zu klapen
+            if (!walkableRight) { x = 0; y = 1; }
 
             _move3(x, y);
         }
