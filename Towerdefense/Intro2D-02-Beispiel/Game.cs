@@ -44,12 +44,13 @@ namespace Intro2D_02_Beispiel
         static Map map;
         static GlobalHitter hitter;
         static Projectile corn;
+        static int[] mapInt;
 
         static void initialize()
         {
             player = new Player();
-            tobi = new Enemy(new Vector2f(0f, 265f), "tdtextures/wurm_hor_2.png");   //Spawnposition
-            tobi2 = new Enemy(new Vector2f(0f, 305f), "tdtextures/wurm_vert_2.png");
+            tobi = new Enemy(new Vector2f(0f, 295f), "tdtextures/wurm_hor_2.png");   //Spawnposition
+         //   tobi2 = new Enemy(new Vector2f(0f, 305f), "tdtextures/wurm_vert_2.png");
             map = new Map();
             corn = new Projectile(new Vector2f(600,250));
             
@@ -63,13 +64,13 @@ namespace Intro2D_02_Beispiel
         static void update()
         {
             player.move(map);
-            tobi.move(player.getPosition());
+            tobi.move3(player.getPosition());
            // tobi.move(hitter.getPosition()); klappt erst wenn der globalhitter gefixt ist
-            tobi2.move(player.getPosition());
+       //     tobi2.move(player.getPosition());
 
             corn.shoot(tobi.getPosition());
 
-            player.placeTower(mapInt); // den intAray aus der Map gettern? 
+           // player.placeTower(mapInt); // den intAray aus der Map gettern? 
 
             
             if (collision(player.getPosition(), player.getHeight(), player.getWidth(), tobi.getPosition(), tobi.getHeight(), tobi.getWidth()))
@@ -92,7 +93,7 @@ namespace Intro2D_02_Beispiel
             player.draw(win);
             corn.draw(win);
             tobi.draw(win);
-            tobi2.draw(win);
+           // tobi2.draw(win);
             // hitter.draw(win);        //klappt noch nciht?
             win.Display();
            

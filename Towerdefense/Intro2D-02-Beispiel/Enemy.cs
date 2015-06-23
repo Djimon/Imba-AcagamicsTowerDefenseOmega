@@ -45,6 +45,14 @@ namespace Intro2D_02_Beispiel
             win.Draw(sprite);
         }
 
+        //KI - move test
+        public void move3(Vector2f plaxerPosition)
+        { 
+            //TODO: Your KI here ;)
+
+
+        }
+
         public void move(Vector2f playerposition)
         {
             if (position.X < 210) position.X += 0.1f;
