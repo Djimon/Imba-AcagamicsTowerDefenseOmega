@@ -66,7 +66,11 @@ namespace Intro2D_02_Beispiel
             player.move(map);
 
             //Enemy-Movement:
-            tobi.move3(player.getPosition(),map.isWalckable(tobi.getX(),tobi.getY()));
+            tobi.move3(player.getPosition(),
+                map.isWalckable2(tobi.getX()+1 ,tobi.getY()+1),  //movableRight
+                map.isWalckable2(tobi.getX() , tobi.getY()-1),   //movableLeft
+                map.isWalckable2(tobi.getX(), tobi.getY()),    //movableTop
+                map.isWalckable2(tobi.getX(), tobi.getY()));     //movableBot
 
 
            // tobi.move(hitter.getPosition()); klappt erst wenn der globalhitter gefixt ist

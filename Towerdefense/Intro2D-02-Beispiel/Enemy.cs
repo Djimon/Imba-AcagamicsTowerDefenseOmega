@@ -30,11 +30,11 @@ namespace Intro2D_02_Beispiel
 
         public int getX()
         {
-            return (int)this.position.X / 50;
+            return (int)(this.position.X / 50);
         }
         public int getY()
         {
-            return (int)this.position.Y / 50;
+            return (int)(this.position.Y / 50);
         }
 
         public Enemy(Vector2f _position, string texturePath)
@@ -53,15 +53,25 @@ namespace Intro2D_02_Beispiel
             win.Draw(sprite);
         }
 
-        //KI - move test //aufruf in Game.cs (siehe: update()>> tobi.move3(..)
-        public void move3(Vector2f plaxerPosition, bool walkable)
+        public void _move3(Single x, Single y)
         {
-            if (walkable)
-            { 
+            position.X += x;
+            position.Y += y;
+            //int[] tmp = new int[2];
+            
+        }
 
-            }
+        //KI - move test //aufruf in Game.cs (siehe: update()>> tobi.move3(..)
+        public void move3(Vector2f plaxerPosition, bool walkableRight, bool walkableLeft, bool walkableTop, bool walkableBot)
+        {
+            //if (walkableBot) { position.Y += 1; }
+            int x = 0;
+            int y = 0;
 
+            if (walkableRight) { x = 1; y = 0;}  //das geht
+            if (walkableTop) { x = 0; y = -1;} //scheint zu klapen
 
+            _move3(x, y);
         }
 
         public void move(Vector2f playerposition)

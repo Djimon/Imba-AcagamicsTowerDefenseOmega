@@ -15,10 +15,20 @@ namespace Intro2D_02_Beispiel
 
         public bool isWalckable(int i, int j)
         {
-            if (mapInt[i, j] == 1)
+            
+            if (mapInt[i, j] == 2)
                 return false;
             else
                 return true;
+        }
+        public bool isWalckable2(int i, int j)
+        {
+            if (i < 0 || i > 600) { i = 0; }
+            if (j < 0 || j > 600) { j = 0; }
+            if (mapInt[i, j] == 2)
+                return true;
+            else
+                return false;
         }
 
         public Map()
