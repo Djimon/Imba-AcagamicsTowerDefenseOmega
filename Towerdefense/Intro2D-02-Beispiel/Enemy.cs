@@ -28,6 +28,14 @@ namespace Intro2D_02_Beispiel
             return sprite.Texture.Size.Y;
         }
 
+        public int getX()
+        {
+            return (int)this.position.X / 50;
+        }
+        public int getY()
+        {
+            return (int)this.position.Y / 50;
+        }
 
         public Enemy(Vector2f _position, string texturePath)
         {
@@ -47,8 +55,8 @@ namespace Intro2D_02_Beispiel
 
         //KI - move test
         public void move3(Vector2f plaxerPosition)
-        { 
-            //TODO: Your KI here ;)
+        {
+            if (Map.isWalckable(getX(),getY()) { }
 
 
         }
