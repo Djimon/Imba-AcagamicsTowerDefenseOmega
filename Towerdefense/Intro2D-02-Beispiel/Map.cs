@@ -24,7 +24,7 @@ namespace Intro2D_02_Beispiel
         public bool isWalckable2(int i, int j)
         {
             if (i < 0 || i > 14) { i = 0; }
-            if (j < 0 || j > 14) { j = 0; }
+            if (j < 0 || j > 18) { j = 0; }
             if (mapInt[i, j] == 2)
                 return true;
             else
