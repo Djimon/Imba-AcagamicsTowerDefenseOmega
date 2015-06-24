@@ -62,17 +62,64 @@ namespace Intro2D_02_Beispiel
         }
 
         //KI - move test //aufruf in Game.cs (siehe: update()>> tobi.move3(..)
-        public void move3(Vector2f plaxerPosition, bool walkableRight, bool walkableLeft, bool walkableTop, bool walkableBot)
+        public void move3(Vector2f playerPosition, bool walkableRight, bool walkableLeft, bool walkableTop, bool walkableBot)
         {
-            //if (walkableBot) { position.Y += 1; }
             int x = 0;
             int y = 0;
 
-            if (walkableRight) { x = 1; y = 0;}  //das geht
-            //if (walkableTop) { x = 0; y = -1;} //scheint zu klapen
-            if (!walkableRight) { x = 0; y = 1; }
+            /* nicht ganz präzise aber haut hin
+            if (walkableRight && Keyboard.IsKeyPressed(Keyboard.Key.D)) { x = 1; y = 0;}  //das geht
+            if (walkableTop && Keyboard.IsKeyPressed(Keyboard.Key.W)) { x = 0; y = -1;} //scheint zu klapen
+            if (walkableLeft && Keyboard.IsKeyPressed(Keyboard.Key.A)) { x = -1; y = 0; } // scheint auch zu klappen
+            if (walkableBot && Keyboard.IsKeyPressed(Keyboard.Key.S)) { x = 0; y = 1; }
+            */
+            
+            
+
+            int tmp = check(playerPosition, walkableRight, walkableLeft, walkableTop, walkableBot);
+
+            if (tmp == 0) { x = 1; y = 0; }
+            if (tmp == 1) { x = -1; y = 0; }
+            if (tmp == 2) { x = 0; y = -1; }
+            if (tmp == 3) { x = 0; y = 1; }
 
             _move3(x, y);
+        }
+
+        public int check(Vector2f playerPosition,bool walkableRight, bool walkableLeft, bool walkableTop, bool walkableBot)
+        {          
+            /*
+             * 0 only walkable right
+             * 1 only walkable left
+             * 2 only walkable top
+             * 3 only walkable bot
+             */
+            if (!walkableTop && !walkableBot && walkableRight && !walkableLeft)
+            { return 0; }
+            if (!walkableTop && !walkableBot && !walkableRight && walkableLeft)
+            { return 1; }
+            if (walkableTop && !walkableBot && !walkableRight && !walkableLeft)
+            { return 2; }
+            if (!walkableTop && walkableBot && !walkableRight && !walkableLeft)
+            { return 3; }
+
+            int getxEnemy = (int)playerPosition.X / 50;
+            int getyEnemy = (int)playerPosition.Y / 50;
+
+            /*
+             * tobi.getX()+1 ,tobi.getY()+1),  //movableRight  0
+             * tobi.getX() , tobi.getY()+1),   //movableLeft   1
+             * tobi.getX(), tobi.getY()),    //movableTop      2
+             * tobi.getX(), tobi.getY()+1));     //movableBot  3
+             */
+            
+
+            return -1;       
+        }
+
+        public double dist(int x1, int y1, int x2, int y2)
+        {
+            return Math.Sqrt(Math.Pow(x1 - x2, 2) + Math.Pow(y1 - y2, 2));
         }
 
         public void move(Vector2f playerposition)
